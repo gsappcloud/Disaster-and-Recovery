@@ -121,9 +121,9 @@ th { padding-right: 1em; }
  */
 
 #container {
-  margin: 0 auto;
-  padding: 0 10px;
-  width: 940px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 /**
@@ -133,126 +133,11 @@ th { padding-right: 1em; }
 /* 1 column: global values*/
 
 #main {
-  display: inline;
+  display: block;
   margin: 0;
 }
 
-/* 3 columns */
 
-body.two-sidebars #main {
-  float: left;
-  margin: 0 0 0 240px;
-  padding: 0;
-  width: 460px;
-}
-
-/* 2 columns: sidebar-left */
-
-body.sidebar-left #main {
-  float: right;
-  margin: 0;
-  padding: 0;
-  width: 700px;
-}
-
-/* 2 columns: sidebar-right */
-
-body.sidebar-right #main {
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 700px;
-}
-
-/**
- * 4.SIDEBARS
- */
-
-/* 3 columns: sidebar-left */
-
-body.two-sidebars #sidebar-left {
-  float: left;
-  margin: 0 0 0 -700px;
-  padding: 0;
-  width: 220px;
-}
-
-/* 3 columns: sidebar-right */
-
-body.two-sidebars #sidebar-right {
-  float: right;
-  margin: 0;
-  padding: 0;
-  width: 220px;
-}
-
-/* 2 columns: sidebar-left */
-
-body.sidebar-left #sidebar-left {
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 220px;
-}
-
-/* 2 columns: sidebar-right */
-
-body.sidebar-right #sidebar-right {
-  float: right;
-  margin: 0;
-  padding: 0;
-  width: 220px;
-}
-
-/**
- * 5.HEADER
- */
-
-#header {
-  margin: 0;
-  padding: 2.5em 0 0;
-  position: relative;
-}
-
-#header #logo {
-  float: left;
-  margin: 0 1em 1.5em 0;
-}
-
-#header #site-name-slogan {
-  float: left;
-  margin: 0 0 1.5em;
-}
-
-#header #site-name {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.5em;
-  font-weight: 700;
-  line-height: 1.2;
-  margin: 0;
-}
-
-#header #site-name a:hover {
-  text-decoration: none;
-}
-
-#header #site-slogan {
-  margin: 0;
-}
-
-#search-theme-form {
-  float: right;
-  margin: .7em 0 0;
-}
-
-/* hides "Search this site:" label from search forms */
-
-div#edit-search-theme-form-1-wrapper label, 
-div#edit-search-block-form-1-wrapper label {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-}
 
 /**
  * 6.NAVIGATION
@@ -633,3 +518,14 @@ div.view div.views-admin-links li a {
 
 /* display block */
 .display-block { display: block; }
+
+
+/* Disaster and Recovery */
+iframe{
+	position: fixed;
+	width:100%;
+	height:90%;
+	z-index:-1000;
+	border:0;
+}
+
