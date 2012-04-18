@@ -44,9 +44,9 @@ Equation for font sizing:
  */
 
 body {
-  background: #222;
-  color: #FFF;
-  font-family: Arial, Helvetica, Verdana, sans-serif;
+  background: #F5EBDF;
+  color: #222;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   margin: 0;
@@ -116,26 +116,9 @@ th, tr, td {  vertical-align: middle; }
 th { padding-right: 1em; }
 .sticky-header th, .sticky-table th {  border-bottom: 3px solid #ccc;  padding-right: 1em;  text-align: left; }
 
-/**
- * 2.LAYOUT
- */
 
-#container {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
 
-/**
- * 3.MAIN
- */
 
-/* 1 column: global values*/
-
-#main {
-  display: block;
-  margin: 0;
-}
 
 
 
@@ -521,11 +504,161 @@ div.view div.views-admin-links li a {
 
 
 /* Disaster and Recovery */
-iframe{
-	position: fixed;
-	width:100%;
-	height:90%;
-	z-index:-1000;
-	border:0;
+
+
+/**
+ * 3.MAIN
+ */
+
+
+#main {
+  margin: 0;
+  width:850px;
+  padding-right:14px;
 }
 
+#content{
+	width:864px;
+	position:relative;
+	display:block;
+	margin-top:3%;
+	margin-left:160px;
+}
+
+#left {
+	position:fixed;
+	display:block;
+	width:160px;
+	margin-top:42px;
+	left:0;
+	z-index:100;
+}
+
+#logo {
+	display:block;
+	position:relative;
+	margin-left:42px;
+	margin-top:42px;
+	width: 45px;
+}
+
+#nav {
+	margin: 45% 0 0 42px;
+}
+
+#about img, #scoring img, #credits img {
+	display:block;
+	position:relative;
+	margin-top: 30px;
+	width:70px;
+}
+
+#about:hover{
+}
+
+#images img{
+	margin-bottom:20px;
+}
+
+/**
+ * 2.LAYOUT
+ */
+
+#container {
+  margin: 0;
+  padding: 0;
+  width: 1024px;
+  position:absolute;
+  left:0;
+  top:0;
+}
+
+
+
+#score, #respond, #nav-prev-container, #nav-next-container {
+	display:block;
+	position:fixed;
+	z-index:100;
+	background-color: #222;
+	height:120px;
+	bottom:0;
+}
+
+#score {
+	width:158px;
+	left:0;
+}
+
+#respond {
+	width:618px;
+	left:160px;
+}
+
+#nav-prev-container{
+	display:block;
+	left:780px;
+	width:118px;	
+}
+
+#nav-next-container{
+	display:block;
+	left:900px;
+	width:120px;	
+}
+
+#score-text, #respond-text, #nav-prev-text, #nav-next-text {
+	display:block;
+	margin-top:30px;
+	color:#fff;
+	font:bold 48px Verdana, Arial, Helvetica, sans-serif;
+}
+
+#score-text {
+	margin:30px auto 0;
+	text-align:center;
+}
+
+#respond-text {
+	margin-left:177px;
+}
+
+#nav-prev-text, #nav-next-text {
+	margin-left:37px;
+}
+
+
+
+
+
+#question-container {
+	margin:30px 0 130px;
+}
+
+
+#disqus_thread {
+	margin:0 30px !important;
+}
+
+#comment-control, #comment-control:hover{
+	height:70px;
+	vertical-align:middle;
+	text-align: center;
+	margin-top:25px;
+	display:block;
+	text-transform:uppercase;
+	font: bold 18px Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+}
+
+#question-copy {
+	text-align: center;
+	margin:40px;
+	display:block;
+	font: bold 36px Verdana, Arial, Helvetica, sans-serif;
+}
+#question-instruction {
+	text-align: center;
+	margin:0 40px 80px;
+	display:block;
+	font: 22px Verdana, Arial, Helvetica, sans-serif;
+}

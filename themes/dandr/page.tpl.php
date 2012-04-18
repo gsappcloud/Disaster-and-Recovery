@@ -18,18 +18,32 @@
 
 <body class="<?php print $body_classes; ?>">
 
-  <div id="container" class="clearfix">
+<div id="container">
+	<aside id="left">
+		<?php if ($logo): ?>
+			<img id="logo" src="<?php print $logo; ?>" alt="<?php print t('Disaster and Recovery'); ?>" />
+    	<?php endif; ?>
+    	
+    	<nav id="nav">
+    		<a id="about" href="/"><img src="/sites/default/files/about.png" alt="<?php print t('About'); ?>" /></a>
+    		<a id="scoring" href="/scoring"><img src="/sites/default/files/scoring.png" alt="<?php print t('Scoring'); ?>" /></a>
+    		<a id="credits" href="/credits"><img src="/sites/default/files/credits.png" alt="<?php print t('Credits'); ?>" /></a>
+		</nav>
+		
+	</aside> <!-- #left -->
 
-    <section id="main" role="main" class="clearfix">
-      <?php if (!empty($messages)): print $messages; endif; ?>
-      <a id="main-content"></a>
-      <?php print $content; ?>
-    </section> <!-- /#main -->
+	<div id="content">
 
+    	<section id="main" role="main">
+      		<?php if (!empty($messages)): print $messages; endif; ?>
+      			<a id="main-content"></a>
+      		<?php print $content; ?>
+    	</section> <!-- /#main -->
+    	
+	</div><!-- #content -->
+	
+</div> <!-- #container -->
 
-    <?php print $closure ?>
-
-  </div> <!-- /#container -->
 
 </body>
 </html>

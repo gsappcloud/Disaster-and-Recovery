@@ -3,6 +3,7 @@ description = Dandr is a theme for the Disaster and Recovery exhibition website 
 core = 6.x
 engine = phptemplate
 stylesheets[all][] = style.css
+scripts[] = script.js
 
 regions[left] = Left sidebar
 regions[right] = Right sidebar
