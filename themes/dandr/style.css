@@ -422,7 +422,7 @@ div.view div.views-admin-links li a {
  */
 
 footer {
-	display: none;
+	display:none;
   clear: both;
   padding: 1.5em 0;
   position: relative;
@@ -432,6 +432,10 @@ footer a.feed-icon {
   position: absolute;
   right: 0;
   top: 1.6667em;
+}
+
+footer#content-footer {
+display: inline;
 }
 
 /* support drupal */
